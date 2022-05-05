@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Graphik;
+    src: url(GraphikRegular.otf);
+}
+
+@font-face {
+    font-family: Graphik SB;
+    src: url(GraphikSemibold.otf);
+}
+
+html, body {
+    position: relative;
+    margin:0;
+    font-family: Graphik, sans-serif !important;
+    /* color: white !important; */
+    height: 1500px;
+}
+
+#image {
+    width: 100%;
+    height: 100vh;
+    /* min-height: 50vh; */
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-size: auto 120%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(../pedaflush_wide.png);
+    z-index: 1;
+}
+
+.title {
+    display:block;
+    margin-top:18%;
+    font-size: 18vh;
+    font-family: Graphik SB, sans-serif !important;
+    background-image: -webkit-linear-gradient(36deg, #f09, #3023AE, #0ff);
+    background-image: linear-gradient(36deg, #f09, #3023AE, #0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align:center;
+}
