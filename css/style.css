@@ -8,39 +8,127 @@
     src: url(GraphikSemibold.otf);
 }
 
-html, body {
-    position: relative;
-    margin:0;
-    font-family: Graphik, sans-serif !important;
-    /* color: white !important; */
-    height: 1500px;
+@font-face {
+    font-family: Graphik Med;
+    src: url(GraphikMedium.otf);
 }
 
-#image {
-    width: 100%;
+body, html {
+    /* font-family: Graphik, sans-serif !important; */
+    /* color: white !important; */
+    height: 100%;
+}
+
+#bg {
+    position:fixed;
+    width: 100vw;
     height: 100vh;
-    /* min-height: 50vh; */
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-size: auto 120%;
-    background-repeat: no-repeat;
+    background-image: url(../pedaflush.png);
+    background-size: auto 80%;
     background-position: center center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
-    background-image: url(../pedaflush_wide.png);
-    z-index: 1;
+    transition: 0.4s;
+    opacity: 1;
+    top:0;
+    z-index:-1;
 }
 
 .title {
     display:block;
-    margin-top:18%;
+    margin-top: 40vh;
     font-size: 18vh;
+    transform: 1.6s;
     font-family: Graphik SB, sans-serif !important;
     background-image: -webkit-linear-gradient(36deg, #f09, #3023AE, #0ff);
     background-image: linear-gradient(36deg, #f09, #3023AE, #0ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align:center;
+    z-index: 1;
+}
+
+.red {
+    border:1px solid red;
+}
+
+.parallax {
+    /* The image used */
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.emphasis {
+    color: black;
+    text-align: justify;
+    font-size: 6vh;
+}
+
+.heading {
+    font-family: Graphik SB;
+    text-align: center;
+    font-size: 10vh;
+    position: relative;
+    top: 40vh;
+    background: -webkit-linear-gradient(-135deg,rgb(3, 115, 236), rgb(7, 235, 121));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bluegreen {
+    background: -webkit-linear-gradient(-135deg,rgb(3, 115, 236), rgb(7, 235, 121));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.med {
+    font-family: Graphik Med;
+    font-size: 3.2vh;
+}
+
+.sb {
+    font-family: Graphik SB;
+}
+
+.grey {
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(151, 143, 143));
+    background: linear-gradient(rgb(255, 255, 255), rgb(151, 143, 143));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pink {
+    background-image: -webkit-linear-gradient(36deg, #f09, #3023AE, #0ff);
+    background-image: linear-gradient(36deg, #f09, #3023AE, #0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cent {
+    text-align: center;
+}
+
+#cut {
+    display: none;
+}
+
+.jumb {
+    border-radius: 25px;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-color: #e9ecef;
+}
+
+.center {
+    position: relative;
+    top: auto;
+    bottom: auto;
 }

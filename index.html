@@ -5,27 +5,97 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <title>Pedaflush</title>
+        <title>PedaFlush</title>
     </head>
     <body>
-        <div id="image" data-0="background-size: 150% auto;" data-500="background-size: 100% auto; position: fixed; top:0;" data-501="position: absolute; top: 501px;">
-        <h1 class="title">Pedaflush</h1>
+        <div id="bg"></div>
+        <div class = "container-fluid">
+            <h1 class="title">PedaFlush</h1>
+            <div class="row w-100" style="margin-top:38vh">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <h1 class="emphasis">The PedaFlush is a simple device designed to lessen germ transmission in public toilets. Composed of a step-on pedal attached to the bottom right or left side of a toilet, the PedaFlush keeps physical contact to a minimum, making public toilets a safer, cleaner space.</h1>
+                    <br/><br/><br/><br/>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <div class="row w-100">
+                <div class="col-2"></div>
+                <div class="col-8 jumb row align-items-center justify-content-center" style="background-image: url(dirty-toilet.jpg);">
+                    <div class="text-center" style="width: 30vw">
+                        <h1 class="sb pink" style="margin-top:5%;font-size:7vh">Public toilets are<br/>often dirty.</h1>
+                        <h3>When using public toilets, most of us try not to touch anything – and for good reason. Public bathroom surfaces are frequently contaminated with bacterial and viral pathogens, which have a slight chance of spreading infectious diseases. [1]</h3>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <br/><br/><br/><br/><br/>
+            <div class="row w-100">
+                <div class="col-2"></div>
+                <div class="col-8 jumb row align-items-center justify-content-center">
+                    <div class="text-center" style="width: 32vw">
+                        <h1 class="sb pink" style="margin-top:5%;font-size:7vh">The problem<br/>with sensors</h1>
+                        <h3>Despite being used in many public bathrooms, sensors are expensive and can fail often. Known issues include battery life, poor sensitivity to distance, and fluids clogging up the sensor, impairing its vision. [2]</h3>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <br/><br/><br/><br/><br/><br/><br/><br/>
         </div>
-        <div style="height:300vh;background-color:white;font-size:36px;z-index:10">
+        <div class="parallax row align-items-center justify-content-center" style="background-image: url(pedaflush.png);">
+            <div class="row" style="width: 70vw;height:auto">
+                <div class="col-1"></div>
+                <div class="col-4"><h1 class="pink" style="font-size:8vh">PedaFlush benefits</h1></div>
+                <div class="col-6 row align-items-center justify-content-center">
+                    <div>
+                        <ul style = "list-style-type:square;font-size: 3.4vh;">
+                            <li>Simpler and cheaper than traditional sensors</li>
+                            <li>No electronic parts; less prone to damage</li>
+                            <li>Highly customizable</li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="col-1"></div>
+            </div>
         </div>
-        <!-- <img src="pedaflush.png" style="width:40%"/>
-        <p>The PedaFlush is a contact-free flush for highly used public bathrooms. Powered by a pedal, the PedaFlush minimizes germ transmission by
-            minimizing contact between the user and any surface of a bathroom.
-        </p> -->
+        <div id="cut">
+            <div style="height:1000px;background-color:red">
+            test test test</div>
+            <div class="parallax"></div>
+        </div>
+        <!-- https://www.stayathomemum.com.au/wp-content/uploads/2017/09/dirty-toilet.jpg -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.29/skrollr.min.js"></script>
     </body>
 </html>
 <script>
-    $(document).ready(function() {
-        var s = skrollr.init();
-    });
+    // $(document).ready(function() {
+    //     var s = skrollr.init();
+    // });
+
+    const orig = `
+        height:100vh;
+        background-size: auto 150%;
+        font-size:18vh;
+        margin-top:0;
+    `;
+
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+            document.getElementById("bg").style.backgroundSize = "auto 400%";
+            document.getElementById("bg").style.opacity = "0";
+            document.getElementByClass("title").style.fontSize = "8vh";
+        } else {
+            document.getElementById("bg").style.backgroundSize = "auto 80%";
+            document.getElementById("bg").style.opacity = "1";
+            document.getElementByClass("title").style.fontSize = "18vh";
+        }
+
+    }
+
+    // document.getElementById
     // function rickroll() {
     //     window.location.replace('https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1');
     // }
