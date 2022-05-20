@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+<html lang="en"><head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <title>PedaFlush</title>
-    </head>
+    <style type="text/css"></style></head>
     <body>
-        <div id="bg"></div>
-        <div class = "container-fluid">
+        <div id="bg" style="background-size: auto 400%; opacity: 0;"></div>
+        <div class="container-fluid">
             <h1 class="title">PedaFlush</h1>
             <div class="row w-100" style="margin-top:38vh">
                 <div class="col-2"></div>
                 <div class="col-8">
                     <h1 class="emphasis">The PedaFlush is a simple device designed to lessen germ transmission in public toilets. Composed of a step-on pedal attached to the bottom right or left side of a toilet, the PedaFlush keeps physical contact to a minimum, making public toilets a safer, cleaner space.</h1>
-                    <br/><br/><br/><br/>
+                    <br><br><br><br>
                 </div>
                 <div class="col-2"></div>
             </div>
@@ -23,24 +22,24 @@
                 <div class="col-2"></div>
                 <div class="col-8 jumb row align-items-center justify-content-center" style="background-image: url(dirty-toilet.jpg);">
                     <div class="text-center" style="width: 30vw">
-                        <h1 class="sb pink" style="margin-top:5%;font-size:7vh">Public toilets are<br/>often dirty.</h1>
+                        <h1 class="pink" style="margin-top:5%;font-size:7vh">Public toilets are<br>often dirty.</h1>
                         <h3>When using public toilets, most of us try not to touch anything – and for good reason. Public bathroom surfaces are frequently contaminated with bacterial and viral pathogens, which have a slight chance of spreading infectious diseases. [1]</h3>
                     </div>
                 </div>
                 <div class="col-2"></div>
             </div>
-            <br/><br/><br/><br/><br/>
+            <br><br><br><br><br>
             <div class="row w-100">
                 <div class="col-2"></div>
                 <div class="col-8 jumb row align-items-center justify-content-center">
                     <div class="text-center" style="width: 32vw">
-                        <h1 class="sb pink" style="margin-top:5%;font-size:7vh">The problem<br/>with sensors</h1>
+                        <h1 class="pink" style="margin-top:5%;font-size:7vh">The problem<br>with sensors</h1>
                         <h3>Despite being used in many public bathrooms, sensors are expensive and can fail often. Known issues include battery life, poor sensitivity to distance, and fluids clogging up the sensor, impairing its vision. [2]</h3>
                     </div>
                 </div>
                 <div class="col-2"></div>
             </div>
-            <br/><br/><br/><br/><br/><br/><br/><br/>
+            <br><br><br><br><br><br><br><br>
         </div>
         <div class="parallax row align-items-center justify-content-center" style="background-image: url(pedaflush.png);">
             <div class="row" style="width: 70vw;height:auto">
@@ -48,8 +47,9 @@
                 <div class="col-4"><h1 class="pink" style="font-size:8vh">PedaFlush benefits</h1></div>
                 <div class="col-6 row align-items-center justify-content-center">
                     <div>
-                        <ul style = "list-style-type:square;font-size: 3.4vh;">
-                            <li>Simpler and cheaper than traditional sensors</li>
+                        <ul style="list-style-type:square;font-size: 3.4vh;">
+                            <li>Extremely simple</li>
+                            <li>More than 3x cheaper than most traditional sensors</li>
                             <li>No electronic parts; less prone to damage</li>
                             <li>Highly customizable</li>
                         </ul>
@@ -58,28 +58,36 @@
                 <div class="col-1"></div>
             </div>
         </div>
-        <div id="cut">
-            <div style="height:1000px;background-color:red">
-            test test test</div>
-            <div class="parallax"></div>
+        <div class = "parallax" style="background-image: url(pedaflush_diagram.png); background-size: auto 80%"></div>
+        <div class="row align-items-center justify-content-center" style="height: 100vh">
+            <div class="row" style="width: 70vw;height:auto">
+                <div class="col-4"></div>
+                <div class="col-4 justify-content-center" style="text-align:center">
+                    <h1 class="pink" style="font-size: 9vh">PedaFlush</h1>
+                    <h4 style="font-size: 3vh">A safer, simpler, and more affordable flush for public toilets.</h4>
+                    <img src="pedaflush.png" style="height:40vh;width:auto;margin-left:10%;"/>
+                    <div style="height:1vh"></div>
+                    <input class="btn btn-primary" onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'" type="submit" value="Buy" />  
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+        <div class="container">
+            <p>References:</p>
+            <ol>
+                <li>Vardoulakis, S., Espinoza Oyarce, D. A., & Donner, E. (2022). Transmission of COVID-19 and other infectious diseases in public washrooms: A systematic review. Science of The Total Environment, 803, 149932. https://doi.org/10.1016/j.scitotenv.2021.149932</li>
+                <li>Edwards. P. (2015, September 3). The truth about bathroom sensors (and why they fail so often). Vox Media. https://www.vox.com/2015/9/3/9255805/bathroom-motion-sensors
+                </li>
+            </ol>
+            <br/><br/>
         </div>
         <!-- https://www.stayathomemum.com.au/wp-content/uploads/2017/09/dirty-toilet.jpg -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.29/skrollr.min.js"></script>
-    </body>
-</html>
-<script>
-    // $(document).ready(function() {
-    //     var s = skrollr.init();
-    // });
+    
 
-    const orig = `
-        height:100vh;
-        background-size: auto 150%;
-        font-size:18vh;
-        margin-top:0;
-    `;
+<script>
 
     window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
@@ -102,3 +110,5 @@
     // setTimeout(rickroll,8000);
 </script>
 <!-- http://pedaflush.github.io/flush -->
+</body>
+</html>
